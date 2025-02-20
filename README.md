@@ -3,26 +3,11 @@
 
 
 <h2>Description</h2>
-In my home lab, I set up an Active Directory Domain Services environment on Azure by creating two virtual machines: one running Windows Server 2022 as the domain controller and another running Windows 10 as a client machine. I installed and configured AD DS on the Server 2022 VM, promoted it to a domain controller, and created user accounts. On the Windows 10 VM, I configured network settings to communicate with the domain controller and joined the machine to the domain. After restarting, I successfully logged into the Windows 10 VM using domain credentials, ensuring the domain environment was fully functional for testing and learning purposes.
+In this project, I set up a Jira Service Management environment to simulate a help desk workflow. I implemented a ticketing system that can track and resolve user issues, configure SLAs (Service Level Agreements), automate tasks, and provide customer support through custom workflows. This project allowed me to understand how to use Jira Service Management for managing customer inquiries, handling IT support requests, and maintaining detailed records of support cases to improve response times and team performance..
 <br />
-
-
-<h2>Languages and Utilities Used</h2>
-
-- <b>Microsoft Azure</b>
-- <b>Active Directory</b>
-
-<h2>Environments Used </h2>
-
-- <b>Windows 10</b>
-- <b>Server 2022</b> 
-
-<p align="center">
-<h2>Step 1: Create Server 2022 and Windows VMs on Azure: </h2>
-One VM is running Windows Server 2022 to serve as the Domain Controller. <br/>
-The second VM is a Windows 10 VM, which will act as a domain member client. <br/>
-I ensured both VMs were placed in the same Virtual Network (VNet) to ensure they could communicate with each other over the internal network. <br/>
-<img src="https://i.imgur.com/5he8UZQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<h2> Creating and solving tickets </h2>
+After creating the tickets, I worked on resolving them by following predefined workflows and providing troubleshooting steps for the users. For instance, I assisted users with password resets, guided them through network troubleshooting, and helped with basic software installation problems. This step allowed me to familiarize myself with Jira's tools for tracking ticket progress, adding comments, and ensuring that the issues were resolved in a timely manner. <br/>
+<img src="https://i.imgur.com/AWwCne9.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <h2>Step 2: Install Active Directory Domain Services (AD DS) on the Server 2022 VM:  </h2>
