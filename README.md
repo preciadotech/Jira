@@ -17,7 +17,7 @@ Next, I configured Service Level Agreements (SLAs) within Jira Service Managemen
 <br />
 <h2>Step 3: Set Up Automation for Reopening Tickets: </h2>
 To streamline the support process and ensure that all customer inquiries were addressed appropriately, I set up an automation rule in Jira Service Management. The rule automatically reopened a ticket when the customer added a comment to a previously closed request. This ensured that no user feedback was overlooked, and any additional questions or concerns raised by customers would trigger immediate attention.  <br/>
-<img src="https://i.imgur.com/i61hL98.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/D5b1tXW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 
