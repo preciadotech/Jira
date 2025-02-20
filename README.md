@@ -10,43 +10,18 @@ After creating the tickets, I worked on resolving them by following predefined w
 <img src="https://i.imgur.com/AWwCne9.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<h2>Step 2: Install Active Directory Domain Services (AD DS) on the Server 2022 VM:  </h2>
-After creating the Server 2022 VM, I used Remote Desktop Protocol (RDP) to connect to it and started configuring it. <br/>
-I opened Server Manager, went to Add Roles and Features, and selected Active Directory Domain Services (AD DS) for installation. <br/>
+<h2>Step 2: Set Up SLAs (Service Level Agreements)  </h2>
+Next, I configured Service Level Agreements (SLAs) within Jira Service Management to ensure that customer requests were addressed within acceptable timeframes. . <br/>
 <img src="https://i.imgur.com/spnc4ZB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<h2>Step 3: Promote Server 2022 to Domain Controller: </h2>
-I selected Add a new forest and entered a domain name (e.g., example.local). <br/>
-After completing the wizard, I allowed the server to reboot, which promoted it to the Domain Controller for my new domain (example.local). <br/>
+<h2>Step 3: Set Up Automation for Reopening Tickets: </h2>
+To streamline the support process and ensure that all customer inquiries were addressed appropriately, I set up an automation rule in Jira Service Management. The rule automatically reopened a ticket when the customer added a comment to a previously closed request. This ensured that no user feedback was overlooked, and any additional questions or concerns raised by customers would trigger immediate attention.  <br/>
 <img src="https://i.imgur.com/i61hL98.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<h2>Step 4: Create Users in Active Directory:  </h2>
-I opened the Active Directory Users and Computers tool from Server Manager to start managing users. <br/>
-I created a few test user accounts by right-clicking on the domain (example.local), selecting New → User, and providing details for each user. <br/>
-<img src="https://i.imgur.com/eCbaBMB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<h2>Step 5: Change Network Adapter Settings on Windows 10 VM: </h2> 
-I connected to the Windows 10 VM using RDP and navigated to the Network and Sharing Center. <br/>
-From there, I clicked on Change adapter settings to modify the network adapter configuration. <br/>
-In Internet Protocol Version 4 (TCP/IPv4), I selected Use the following DNS server addresses and entered the IP address of my Domain Controller (the Server 2022 VM) as the DNS server, so the Windows 10 VM can communicate with the domain. <br/>
-<img src="https://i.imgur.com/wftTI5o.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<h2>Step 6: Join the Windows 10 VM to the Domain: </h2>
-On the Windows 10 VM, I opened System Properties (by right-clicking on This PC and choosing Properties → Change settings). <br/>
-I clicked on Change, entered the domain name (example.local), and provided the domain admin credentials to join the domain. <br/>
-After the domain join was successful, I was prompted to restart the VM to apply the changes. I restarted the Windows 10 VM. <br/>
-<img src="https://i.imgur.com/NmSsgN8.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<h2>Step 7: Verify Domain Membership:  </h2>
-After the restart, I logged into the Windows 10 VM using a domain user account (e.g., example.local\username). <br/>
-I ensured the Windows 10 VM could successfully communicate with the Domain Controller and access domain resources like shared folders or printers. <br/>
-<img src="https://i.imgur.com/2HlLThq.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+
+
 
 <!--
  ```diff
