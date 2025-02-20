@@ -12,7 +12,7 @@ After creating the tickets, I worked on resolving them by following predefined w
 <br />
 <h2>Step 2: Set Up SLAs (Service Level Agreements)  </h2>
 Next, I configured Service Level Agreements (SLAs) within Jira Service Management to ensure that customer requests were addressed within acceptable timeframes. . <br/>
-<img src="https://i.imgur.com/spnc4ZB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/v07CwH1.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <h2>Step 3: Set Up Automation for Reopening Tickets: </h2>
